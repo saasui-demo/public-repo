@@ -1,5 +1,5 @@
 resource "google_compute_instance" "deprov-test-instance-1" {
-  name = var.main-instance
+  name = var.instance-name
   machine_type = "n2-standard-2"
   zone = "us-central1-a"
 
@@ -13,5 +13,5 @@ resource "google_compute_instance" "deprov-test-instance-1" {
     network = "default"
   }
 
-  project = var.project
+  project = var.tenant_project_id
 }
