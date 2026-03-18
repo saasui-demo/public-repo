@@ -1,7 +1,7 @@
-variable "project" {
+variable "tenant_project_id" {
   type = string
 }
 
-variable "main-instance" {
+variable "instance-name" {
   type = string
 }
